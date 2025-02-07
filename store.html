@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 p-4 text-white flex justify-between items-center">
+        <h1 class="text-2xl font-bold tex">Danh Sách Sản Phẩm</h1>
+        <button class="relative">
+            <i class="fa fa-shopping-cart text-2xl"></i>
+            <span class="absolute top-0 right-0 bg-red-500 text-white text-xs px-2 rounded-full" id="soluong">0</span>
+        </button>
+    </header>
+    <!-- danh muc -->
+     <div class="flex">
+    <div class="flex flex-col">
+      <h2 class="text-left font-bold text-2xl">Danh Mục</h2>
+      <select id="danhmuc">
+        <option>Điện thoại</option>
+        <option>iphone</option>
+        <option>Samsung</option>
+      </select>
+        
+    </div>
+    <!-- list san pham -->
+     
+    <div class="container mx-auto py-10"> 
+        <div id="productList" class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-7">
+            
+        </div>
+      </div>
+    </div>
+    
+      <!-- axios -->
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>;
+    <script src="./DSSP_card/index(QV).js"></script>
+    <script src="./DSSP_card/controller(QV).js"></script>
+
+</body>
+</html>
