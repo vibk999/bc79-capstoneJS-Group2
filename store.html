@@ -23,11 +23,11 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-gray-100">
+  <body class="bg-gradient-to-r from-blue-50 to-indigo-100 min-h-screen">
     <header
-      class="bg-blue-600 p-4 text-white flex justify-between items-center"
+    class="bg-indigo-600 p-4 text-white flex justify-between items-center shadow-md"
     >
-      <h1 class="text-2xl font-bold tex">Danh Sách Sản Phẩm</h1>
+      <h1 class="text-2xl font-bold">Danh Sách Sản Phẩm</h1>
       <button
         class="relative btn btn-primary"
         data-bs-toggle="modal"
@@ -43,24 +43,26 @@
       </button>
     </header>
     <!-- danh muc -->
-    <div class="flex">
-      <div class="flex flex-col">
-        <h2 class="text-left font-bold text-2xl">Danh Mục</h2>
-        <select id="danhmuc">
-          <option>Điện thoại</option>
-          <option>iphone</option>
-          <option>Samsung</option>
-        </select>
-      </div>
+    <div class="container mx-auto py-8">
+      <div class="flex gap-6">
+          <!-- Danh Mục -->
+          <div class="w-1/4 bg-white p-4 rounded-lg shadow-md">
+              <h2 class="text-xl font-semibold mb-4">Danh Mục</h2>
+              <select id="danhmuc" class="w-full p-2 border rounded">
+                  <option>Điện thoại</option>
+                  <option>iphone</option>
+                  <option>Samsung</option>
+              </select>
+          </div>
       <!-- list san pham -->
 
-      <div class="container mx-auto py-10">
-        <div
-          id="productList"
-          class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-7"
-        ></div>
-      </div>
+      <div class="w-3/4">
+        <div id="productList" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-lg text-center">
+        </div>
     </div>
+</div>
+</div>
 
     <!-- Gio hang (luong) -->
     <!-- The Modal -->
