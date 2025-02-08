@@ -1,0 +1,76 @@
+@import "./variable";
+
+// start copy 1
+// modal body
+.item {
+  height: 150px;
+  margin-bottom: 5px;
+  display: flex;
+  gap: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+
+  .img {
+    width: 25%;
+    height: 100%;
+    background-image: url("../image.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .content {
+    width: 75%;
+    .name_product {
+      height: 20%;
+      font-size: $font-size-name-product;
+    }
+    .info_product {
+      height: 55%;
+      overflow: hidden;
+      font-size: $font-size-info;
+    }
+    .price_quantity {
+      height: 25%;
+      font-size: $font-size-price-quantity;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price_quantity_right {
+        margin: 0 5px;
+        .quantity {
+          display: flex;
+          .minus {
+            font-size: $font-size-name-product;
+            border-radius: 5px 0 0 5px;
+          }
+          .plus {
+            font-size: $font-size-name-product;
+            border-radius: 0 5px 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
+// end modal body
+
+// start modal footer
+
+.total {
+  label {
+    font-weight: bold;
+    font-size: $font-size-total;
+  }
+}
+
+// end modal footer
+
+// test table
+tr {
+  img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+  }
+}
+// end copy 1

@@ -11,7 +11,9 @@ let renderProduct = (productArr) => {
                 <img src="${product.img}" alt="Product" class="w-full max-h-96 object-cover">
                 <h2 class="text-lg font-semibold mt-2">${product.name}</h2>
                 <p class="text-gray-500">$ ${product.price}</p>
-                <button class="bg-blue-600 text-white px-4 py-2 rounded mt-2" onclick ="addtocart(${product.id})">Thêm vào giỏ</button>
+                <div id = "footer_cart_${product.id}">
+                  <button class="bg-blue-600 text-white px-4 py-2 rounded mt-2" id="btn_${product.id}" onclick ="addtocart(${product.id})">Thêm vào giỏ</button>
+                </div>
             </div>`;
 
     contenHTML += trString;
@@ -19,4 +21,3 @@ let renderProduct = (productArr) => {
 
   document.getElementById("productList").innerHTML = contenHTML;
 };
-
